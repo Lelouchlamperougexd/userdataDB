@@ -1,0 +1,100 @@
+# User Management System
+
+## Project Overview
+This project is a web application that allows users to manage a list of users with basic CRUD (Create, Read, Update, Delete) operations using MongoDB as the database. The application provides an interactive UI to add, edit, delete, and search for users. Sorting functionality is also implemented.
+
+## Features
+- **MongoDB Integration:** Store and manage user data in a database.
+- **CRUD Operations:**
+  - Create: Add new users.
+  ![alt text](image.png)
+  - Read: Display user data.
+  ![alt text](image-1.png)
+  - Update: Edit user details.
+  ![alt text](image-2.png)
+  - Delete: Remove users from the database.
+  ![alt text](image-3.png)
+- **Additional Features:**
+  - Search users by ID.
+  ![alt text](image-4.png)
+  ![alt text](image-5.png)
+  - Sorting users by name or age.
+  ![alt text](image-6.png)
+  ![alt text](image-7.png)
+  - Copy user email functionality.
+  ![alt text](image-8.png)
+- **Error Handling:** Ensures the application gracefully handles invalid inputs and database errors.
+    ![alt text](image-9.png)
+
+## Installation and Setup
+### Prerequisites
+- Node.js installed on your machine.
+- MongoDB installed and running.
+- MongoDB Compass (optional, for database visualization).
+
+### Steps to Run the Application Locally
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Lelouchlamperougexd/userdataDB.git
+   cd userdataDB
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables:
+   - Create a `.env` file in the project root.
+   - Add the following line (replace with your MongoDB URI):
+     ```
+     MONGO_URI=mongodb://localhost:27017/yourdatabasename
+     ```
+4. Run the application:
+   ```sh
+   node server.js
+   ```
+5. Open your browser and go to:
+   ```
+   http://localhost:3000
+   ```
+
+## Usage Instructions
+### Adding a User
+1. Fill in the form with `First Name`, `Last Name`, `Age`, and `Email`.
+2. Click the `+` button to submit the form.
+
+### Viewing Users
+- The list of users is displayed on the homepage.
+- Use the dropdown to sort users by `Name` or `Age`.
+
+### Searching for a User
+1. Enter a user ID in the search bar.
+2. Click `Find` to retrieve user details.
+
+### Editing a User
+1. Click the `Edit` button next to a user.
+2. Enter the updated details in the prompt.
+3. Click OK to save changes.
+
+### Deleting a User
+1. Click the `Delete` button next to a user.
+2. Confirm the deletion.
+
+### Copying Email
+- Click the `Copy` button to copy a user's email to the clipboard.
+
+## Testing and Verification
+- Add at least 5 users using the form.
+- Perform CRUD operations (Create, Read, Update, Delete) to verify functionality.
+- Take screenshots as proof of completion.
+
+## Known Issues & Fixes
+- Fix syntax errors in `script.js` (e.g., incorrect template literals and missing quotes in API requests).
+- Ensure `server.js` has correct port logging.
+- Correct file path issues (e.g., `wev` should be `web`).
+
+## Contribution
+Feel free to fork the repository, make changes, and submit a pull request.
+
+## License
+This project is open-source and available under the MIT License.
+

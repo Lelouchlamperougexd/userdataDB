@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Main Container */
+.user-container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Headings */
+.user-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+/* Input Fields */
+.input-container, .input-container-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.input-container input, .input-container-search input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-container input:focus, .input-container-search input:focus {
+    border-color: #4CA1AF;
+    box-shadow: 0 0 5px rgba(76, 161, 175, 0.5);
+}
+
+/* Buttons */
+.input-container button, .input-container-search button {
+    background: #4CA1AF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.input-container button:hover, .input-container-search button:hover {
+    background: #2C3E50;
+}
+
+/* User List */
+.user-list {
+    margin-top: 20px;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.user-item:hover {
+    background: #e8e8e8;
+}
+
+.user-item button {
+    size: 20px;
+    border-radius: 15px;
+    width: 65px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.user-item button.edit {
+    background-color: #ccc;
+    size: 20px;
+    border-radius: 15px;
+    width: 55px;
+    height: 35px;
+    color: #007bff;
+}
+
+.user-item button.delete {
+    color: #dc3545;
+}
+
+.user-item button:hover {
+    opacity: 0.7;
+}
+
+/* Sorting Dropdown */
+#sort {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#sort:hover {
+    border-color: #4CA1AF;
+}
+
+#sort:focus {
+    outline: none;
+    border-color: #2C3E50;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #ccc;
+    size: 20px;
+    border-radius: 15px;
+}
